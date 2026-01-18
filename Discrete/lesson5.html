@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Educational Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="lesson5.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SUBSETS, SUPERSETS AND POWER SETS</h1>
+        <p>Lesson 5</p>
+    </header>
+
+    <div class="container">
+
+        <section class="content-section">
+            <h2>WHAT IS A SUBSET?</h2>
+
+            <div class="subset-layout">
+                <div class="subset-text">
+                    <p>
+                        A subset can be described as a smaller set that is contained within a larger set.
+                        A set can only be considered as a subset of a given set if and only if all its
+                        elements are elements of another set.
+                    </p>
+
+                    <p>
+                        A subset is a set where all its elements are also found within another, larger (or equal) set,
+                        meaning it's a part of the whole, like {1, 2, 3} being a subset of {1, 2, 3, 4, 5} because 1, 2,
+                        and 3
+                        are in the larger set.
+                    </p>
+                </div>
+
+                <div class="subset-image">
+                    <img src="subsetpic.png" alt="Subset Example">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>SUBSET</h2>
+
+            <div class="subset-layout reverse">
+                <div class="subset-text">
+                    <p>
+                        A set cannot be a subset of another set if one or more of its elements is not present in the
+                        other set.
+                    </p>
+                </div>
+
+                <div class="subset-image">
+                    <img src="sample2.png" alt="Subset example">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Examples of Subsets</h2>
+
+            <div class="examples-grid">
+
+                <div class="example-card">
+                    <img src="sample1.png" alt="Subset Example 1">
+                    <p>
+                        Let us have A = {1,2,3} and <br>
+                        B = {1,2,3,4,5}
+                        <br>
+                        <br>
+                        Since elements 1, 2, and 3 of set A are also present in set B we can therefore say that “A is a
+                        subset of B” or A ⊂ B.
+
+                    </p>
+                </div>
+
+                <!-- Example 2 -->
+                <div class="example-card">
+                    <img src="sample2.png" alt="Subset Example 2">
+                    <p>
+                        Let us have P = {1, 3, 4} and Q = {2, 3,4 ,5 ,6}.
+                        <br> <br>
+                        The diagram shows that “P is not a subset of Q” or P ⊄ Q since although elements 3 and 4 of set
+                        P are present in set Q, the element 1 is not.
+
+                    </p>
+                </div>
+
+                <div class="example-card">
+                    <img src="sample3.png" alt="Subset Example 3">
+                    <p>
+                        Let us have the following sets:
+                        A = {1,3,5}, B = {1,2,3,4,5}, and C = {2,8} </p>
+                    <p>
+                        The diagram shows that:
+                        A is a subset of B or A ⊂ B because the elements 1, 3, and 5 of set A are also present in set B.
+                        <br>
+                        <br>
+                        We can also say that C is not a subset of B or C ⊄ B because although 2 of set C is also an
+                        element of B but 8 is not.
+
+                    </p>
+                </div>
+
+                <div class="example-card">
+                    <img src="sample4.png" alt="Subset Example 4">
+                    <p>
+                        Let us have A = {1, 2, 3, 4, 5} and B = {1, 2, 3, 4 ,5}
+                        <br><br>
+                        The diagram shows
+                        A is a subset of B or A ⊆ B since elements 1, 2, 3, 4, 5 of set A is also present in set B.
+                        <br><br>
+                        The situation where both sets have the same elements is called an improper subset denoted by the
+                        symbol “⊆”.
+
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+                    <img src="sample5.png" alt="Subset Example 5">
+                    <p>
+                        Let us have A = {1, 2, 3} and B = { }.
+                        <br>
+                        <br>
+                        If B is an empty set, meaning set B has no elements at all, it suffice to say that all its
+                        elements (which is nothing) belong to set A regardless of the elements present in set A. This
+                        proves that the empty set is a subset of every set.
+                    </p>
+                </div>
+
+                <div class="example-card">
+                    <img src="example6.png" alt="Subset Example 6">
+                    <p>
+                        If one element of a set is missing, it cannot be considered a subset.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <h2>Let's Practice: Fill in the Blanks</h2>
+            <p>Let A = {2, 3, 4, 5, 6, 7}, B = {2, 4, 7, 8, 9}, C = { }, and D = {2, 4}. Fill in ⊂, ⊆ or ⊄ to make the
+                statements true.</p>
+
+            <div class="quiz-container">
+                <div class="question">
+                    1. D ___ A : <input type="text" id="q1" maxlength="2">
+                </div>
+                <div class="question">
+                    2. D ___ C : <input type="text" id="q2" maxlength="2">
+                </div>
+                <div class="question">
+                    3. B ___ B : <input type="text" id="q3" maxlength="2">
+                </div>
+                <div class="question">
+                    4. A ___ D : <input type="text" id="q4" maxlength="2">
+                </div>
+                <div class="question">
+                    5. C ___ D : <input type="text" id="q5" maxlength="2">
+                </div>
+
+                <button onclick="checkAnswers()">Submit Answers</button>
+                <div class="result" id="result"></div>
+            </div>
+        </section>
+
+        <script>
+            function checkAnswers() {
+                const answers = ["⊂", "⊄", "⊆", "⊄", "⊂"];
+                let score = 0;
+                let output = "";
+
+                for (let i = 1; i <= 5; i++) {
+                    const userAns = document.getElementById('q' + i).value.trim();
+                    if (userAns === answers[i - 1]) {
+                        score++;
+                        output += `Question ${i}: <span style="color:green;">Correct</span><br>`;
+                    } else {
+                        output += `Question ${i}: <span style="color:red;">Wrong (Correct: ${answers[i - 1]})</span><br>`;
+                    }
+                }
+
+                output += `<br>Your score: ${score} / 5`;
+                document.getElementById("result").innerHTML = output;
+            }
+        </script>
+
+
+        <section>
+            <h2>WHAT IS A SUPERSET?</h2>
+
+            <div class="image-box">
+                <p>A superset is a set that contains all the elements of another set with additional elements.
+                    This means the larger set contains all the elements of smaller set, and at least one element of the
+                    larger set is not present in the smaller set.
+                </p>
+                <img src="superset.jpg" alt="Set Illustration">
+                <p>
+                    Let A = { 1, 2, 3, 4, 5, 6, 7} and B = {1, 3, 5}
+
+                    <br>
+                    <br>
+                    From these values we can say that
+                    A is a superset of B or A ⊃ B since set A has all the elements of set B.
+                    <br>
+                    _____________________________________________________________________________
+                    <br>
+                    <img src="ssample1.jpg" alt="Subset Example 2">
+                <p>
+                    An improper superset (⊇) happens when every element of a set is contained in another set.
+                    <br> <br>
+                    The diagram shows
+                    A is an improper superset of B or A ⊇ B since elements 1, 2, 3, 4, and 5 of set A are also present
+                    in set B.
+
+                </p>
+
+            </div>
+        </section>
+        <section>
+            <div class="practice-card">
+
+                <div class="sample">
+                    <p>
+                        Sample Practice:
+                        <br>
+                        Let A = {a, e, i, o, u} and B = {a, c, d, e}. Is set A a superset of set B (A ⊃ B) ?
+                        <br>Explain your answer.
+
+                        <br>
+                        <br>
+                        A is not a superset of B (A ⊅ B). Since set B has elements c, d, and e that are not present in
+                        set A.
+                    </p>
+                </div>
+
+                <div class="sample-card">
+                    <p>
+                        Sample Practice:
+                        <br>
+                        Let A = {2, 3, 7, 9} and B= {2, 7, 9}, is A a superset of set B (A ⊃ B) . Prove your answer.
+                        <br> <br>
+                        A is a superset of set B (A ⊃ B) since all the elements of set B are present in set A.
+
+                    </p>
+                </div>
+
+                <div class="sample-card">
+                    <p>
+                        Sample Practice
+                        <br>
+                        Is A = {7, 9, 11} a superset of B = {5, 7, 9, 11}. Justify your answer.
+                        <br> <br>
+                        No. Looking at the cardinality of both sets, it can be observed that set B has the cardinality
+                        of 5 (B |5|) while set A only has the cardinality of 3 (A |3|), therefore it is impossible to
+                        have A as a superset of B (A ⊅ B) since set B has a bigger cardinality than set A.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+
+        <section class="content-section">
+            <h2>WHAT IS A POWER SET?</h2>
+
+            <div class="subset-layout">
+                <div class="subset-text">
+                    <p>
+                        The power set is the collection of all possible subsets of a given set including the empty set {
+                        } and the set itself.
+                    </p>
+
+                    <p>
+                        A subset is a set where all its elements are also found within another, larger (or equal) set,
+                        meaning it's a part of the whole, like {1, 2, 3} being a subset of {1, 2, 3, 4, 5} because 1, 2,
+                        and 3
+                        are in the larger set.
+                    </p>
+                    <p>
+                        If the given set has n elements, then its Power Set will contain 2n elements meaning if a set
+                        has four elements its power set is composed of 16 or (2 x 2 x 2 x 2= 16).
+                        <br>
+                        Let us say Set A = { a, b, c }
+                        Number of Elements: 3
+                        Using notation 2n , therefore 23, the number subsets of the set should be: 8
+
+
+                    </p>
+                </div>
+
+                <div class="subset-image">
+                    <img src="powerset.png" alt="Subset Example">
+                </div>
+            </div>
+
+            <div class="samples-card">
+
+                <p>
+                    Examples:
+                    <br>
+                    Find the power set of X = {red, yellow, blue, pink, green}
+                    <br> <br>
+                    P (X) = {∅, {red}, {yellow}, {blue}, {pink}, {green}, {red, yellow}, {red, blue}, {red, pink}, {red,
+                    green}, {yellow, blue}, {yellow, pink}, {yellow, green}, {blue, pink}, {blue, green}, {pink, green},
+                    {red, yellow, blue}, {red, yellow, pink}, {red, yellow, green}, {red, blue, pink}, {red, blue,
+                    green}, {yellow, blue, pink}, {yellow, blue, green}, {pink, blue, green}, {red, pink, green},
+                    {yellow, pink, green}, {blue, pink, green}, {red, yellow, blue, pink}, {red, yellow, blue, green},
+                    {red, yellow, blue, pink, green}}
+
+
+                </p>
+            </div>
+            <div class="samples-card">
+
+                <p>
+                    Examples:
+                    <br>
+                    Find the power set of Z = {Mike, Bob, Rose, Ann}
+                    <br> <br>
+                    P(Z) = { ∅, {Mike}, {Bob}, {Rose}, {Ann}, {Mike, Bob}, {Mike, Rose}, {Mike, Ann}, {Bob, Rose}, {Bob,
+                    Ann}, {Rose, Ann}, {Mike, Bob, Rose}, {Mike, Bob, Ann}, {Mike, Rose, Ann}, {Bob, Rose, Ann}, {Mike,
+                    Bob, Rose, Ann}}
+
+
+                </p>
+            </div>
+        </section>
+
+
+        <footer>
+            BootStrap
+        </footer>
+
+</body>
+
+</html>
